@@ -49,7 +49,7 @@ tokenless init
 tokenless stats summary
 ```
 
-**安装方式:** `cargo install tokenless`、从 [GitHub Releases](https://github.com/TokenFleet-AI/tokenless/releases) 下载预编译二进制、或 `brew install tokenfleet/tap/tokenless`。
+**安装方式:** `cargo install tokenless`、从 [GitHub Releases](https://github.com/TokenFleet-AI/tokenless/releases) 下载预编译二进制、或 `brew install byx-darwin/tap/tokenless`。
 
 > 支持 **12 种 Agent**：Claude Code、Cursor、Windsurf、Cline、Kilo Code、Antigravity、Augment、Hermes CLI、Pi、Gemini CLI、OpenCode、GitHub Copilot。
 > `tokenless init` 自动安装 hooks。详见 [用户指南 §4](./docs/user-guide.md#4-agent-integration)。
