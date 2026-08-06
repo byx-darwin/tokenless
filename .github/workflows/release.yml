@@ -48,6 +48,11 @@ jobs:
             archive: tar.gz
             musl: true
             onnx: false
+          - target: aarch64-unknown-linux-gnu
+            os: ubuntu-latest
+            archive: tar.gz
+            gnu: true
+            onnx: false
           - target: x86_64-pc-windows-msvc
             os: windows-latest
             archive: zip
@@ -67,6 +72,14 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y musl-tools
+
+      - name: Install aarch64 GNU cross toolchain
+        if: matrix.gnu
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-aarch64-linux-gnu libc6-dev-arm64-cross
+          echo "CC_aarch64_unknown_linux_gnu=aarch64-linux-gnu-gcc" >> "$GITHUB_ENV"
+          echo "AR_aarch64_unknown_linux_gnu=aarch64-linux-gnu-ar" >> "$GITHUB_ENV"
 
       - name: Build with ONNX
         if: matrix.onnx
