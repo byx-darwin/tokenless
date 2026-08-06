@@ -64,7 +64,7 @@ tokenless init
 tokenless stats summary
 ```
 
-**Install options:** `cargo install tokenless`, download from [GitHub Releases](https://github.com/TokenFleet-AI/tokenless/releases), or `brew install tokenfleet/tap/tokenless`.
+**Install options:** `cargo install tokenless`, download from [GitHub Releases](https://github.com/TokenFleet-AI/tokenless/releases), or `brew install byx-darwin/tap/tokenless`.
 
 > Supports **13 agents**: Claude Code, Cursor, Windsurf, Cline, Kilo Code, Antigravity, Augment, Hermes CLI, Pi, Gemini CLI, OpenCode, GitHub Copilot, OpenAI Codex.
 > `tokenless init` auto-installs hooks. See [user guide §4](./docs/user-guide.md#4-agent-integration) for all 13 agents and manual configuration.
